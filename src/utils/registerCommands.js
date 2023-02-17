@@ -11,14 +11,12 @@ const commands = [
     }
 ];
 
-// @ts-ignore
 const rest = new Discord.REST({ version: '10' }).setToken(process.env.TOKEN);
 
 (async () => {
     try {
         console.log('Registering slash commands');
         await rest.put(
-            // @ts-ignore
             Discord.Routes.applicationGuildCommands(process.env.CLIENTID, process.env.GUILDID),
             {
                 body: commands,
