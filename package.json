@@ -1,7 +1,7 @@
 {
-    "name": "discord-bot-template-ts",
+    "name": "discordjs-template",
     "version": "1.0.0",
-    "description": "Discord Bot template",
+    "description": "A discord.js Bot using Slash Commands",
     "scripts": {
         "start": "npm run src/main.js",
         "dev": "nodemon src/main.js"
